@@ -1,0 +1,46 @@
+package Chapter8
+
+object Chapter8exercise extends App{
+  var a1=new BankAccount(100)
+  var a2=new CheckingAccount(100)
+  var a3=new SavingAccount(100)
+  println(a1.deposit(50))
+  println(a2.deposit(50))
+  println(a3.deposit(50))
+  println(a1.withdraw(100))
+  println(a2.withdraw(100))
+  println(a3.withdraw(100))
+  println(a3.deposit(50))
+  println(a3.deposit(50))
+  println(a3.earnMonthlyInterest())
+    println(a3.withdraw(100))
+  println(a3.deposit(50))
+  println(a3.deposit(50))
+    println(a3.withdraw(100))
+  println(a3.deposit(50))
+  println(a3.deposit(50))
+  
+  var p1=new Point(2,3)
+  var p2=new labeldPoint("jack")
+  println(p2.printall())
+  
+//  var s1=new Shape()
+    var s3=new Rectangle(1,1,1,2,2,1,2,2)
+   s3.centerPoint()
+   var s4=new Circle(1,1)
+   s4.centerPoint()
+   var s5=new Square()
+  println(s5.getLocation)
+  println(s5.getHeight)
+  println(s5.getWidth)
+  
+  var s6=new Square(5)
+  println(s6.getLocation)
+  println(s6.getHeight)
+  println(s6.getWidth)
+  
+  var s7=new Square(new java.awt.Point(2,2),5)
+  println(s7.getLocation)
+  println(s7.getHeight)
+  println(s7.getWidth)
+}
